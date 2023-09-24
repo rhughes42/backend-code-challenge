@@ -1,11 +1,25 @@
-# GAN Integrity backend code challenge
+# GAN Integrity Backend Code Challenge
 
-The script `index.js` uses a local api to perform various operations on a set of cities. Your task is to implement an api so that the script runs successfully all the way to the end.
+> Author: [Ryan Hughes](https://www.linkedin.com/in/whoisryan/)  
+> Date: 21 Sep 2023  
+> Role: Senior Software Engineer
 
-Run `npm install` and `npm run start` to start the script.
+## Introduction
 
-Your api can load the required data from [here](addresses.json).
+The script `index.js` uses a local API to perform various operations on a set of cities.
 
-In the distance calculations you can assume the earth is a perfect sphere and has a radius is 6371 km.
+The script is written in Node.js and uses the `axios` library to make requests to the API. The script is written in a functional style and uses `async/await` to handle asynchronous operations.
 
-Once you are done, please provide us with a link to a git repo with your code, ready to run.
+## Dependencies
+
+The auth pipeline uses the `dotenv` library to access a secret assumed to be set in the `.env` file. If not present, the auth script will use a default, hardcoded secret. You can create a `.env` file in the root directory of the project and set the secret there using:
+
+```console
+echo TOKEN=$(openssl rand -hex 32) > .env
+```
+
+## Running The Code
+
+-   Change directory to the root of the project: `cd src`
+-   Install dependencies: `npm install`
+-   Run the script: `npm start`
